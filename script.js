@@ -8,15 +8,29 @@ var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "?", "~"];
 
 function promptPassword() {
-    var passwordPrompt = prompt("How many characters do you want your password to contain?");
-    function validateLength(password){
-        if(password > 7 && password < 128){
-            passwordLength = password
+    var isValidationPass = false;
+
+    while(isValidationPass === false){
+        var passwordPrompt = prompt("How many characters do you want your password to contain?");
+        if(passwordPrompt > 7 && passwordPrompt < 128) {
+            passwordLength = passwordPrompt; //using parseInt to convert string to integer
+            isValidationPass = true; //this will force while loop to end
         }
-        else {
+        else{
             alert("Password must be more than 8 characters and less than 128 characters.")
         }
     }
+
+//Write code below for generation//
+//Weston once you gave your logic to randomize and generate a password you'll have to update the
+//variable 'generatePassword' with your random password
+//Right now this is just a placeholder and will always output 'MY_GENERATED_PASSWORD_HERE' as the random password    
+
+var generatePassword = "MY_GENERATRED_PASSWORD_HERE";
+
+//Insert code here
+
+return generatePassword;//return results of generated password. Shouldn't have to modify this line
 }
 
 // Write password to the #password input
@@ -36,16 +50,7 @@ function copyToClipboard() {
 }
 
 // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
-
-document.addEventListener("click", event => {
-    if(!event.target.matches('#generate')){
-        return;
-    }
-    if(event.target.matches('#generate')){
-        promptPassword()
-    }
-}
+generateBtn.addEventListener("click", writePassword); 
 
 
 // BONUS EVENT LISTENER
