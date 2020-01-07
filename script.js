@@ -100,7 +100,6 @@ function wantSpecialCharacters() {
 function copyToClipboard() {
     var copyPassword = document.getElementById("password");
     copyPassword.select();
-    copyPassword.addEventListener(0, 99999);
     document.execCommand("copy");
     alert("Copy your password: " + copyPassword.value);
 }
