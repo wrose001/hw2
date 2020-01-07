@@ -12,11 +12,11 @@ This web application is a password generator for a business dealing with sensiti
 
 ## Deployment
 
-[https://wrose001.github.io/hw3/] (https://wrose001.github.io/hw3/)
+[https://wrose001.github.io/hw3/](https://wrose001.github.io/hw3/)
 
 ## Images
 
-![Screenshot 1] (hw3/Images/Password_Generator_Screenshot.png)
+![Screenshot 1](/hw3/Images/Password_Generator_Screenshot.png)
 
 ## Built With
 
