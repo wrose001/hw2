@@ -1,9 +1,6 @@
 # Password Generator (Homework 3)
 This web application is a password generator for a business dealing with sensitive data and whose employees need strong passwords.
 
-## Getting Started
-
-Insert text
 
 ### Included Files
 
@@ -19,9 +16,7 @@ Insert text
 
 ## Images
 
-* Screenshot 1
-
-* Screenshot 2
+* [Screenshot 1] (../images/Password_Generator_Screenshot)
 
 ## Built With
 

@@ -1,5 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var clipboard = document,querySelector("#password");
 var passwordLength = 0;
 var uppercaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var lowercaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -96,6 +97,14 @@ function wantSpecialCharacters() {
 
 }
 
+function copyToClipboard() {
+    var copyPassword = document.getElementById("password");
+    copyPassword.select();
+    copyPassword.addEventListener(0, 99999)
+    document.execCommand("copy");
+    alert("Copy your password: " + copyPassword.value);
+}
+
 // Write password to the #password input
 // function writePassword() {
 //   var clickPassword = prompt("How many characters do you want your password to contain?");
@@ -115,6 +124,9 @@ function writePassword() {
     // copyBtn.removeAttribute("disabled");
     // copyBtn.focus();
 }
+
+clipboardBtn.addEventListener("click", copy);
+
 
 
 
