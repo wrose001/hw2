@@ -1,6 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var clipboard = document,querySelector("#password");
+var clipboardBtn = document.querySelector("#password");
 var passwordLength = 0;
 var uppercaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var lowercaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -100,7 +100,7 @@ function wantSpecialCharacters() {
 function copyToClipboard() {
     var copyPassword = document.getElementById("password");
     copyPassword.select();
-    copyPassword.addEventListener(0, 99999)
+    copyPassword.addEventListener(0, 99999);
     document.execCommand("copy");
     alert("Copy your password: " + copyPassword.value);
 }
@@ -130,9 +130,9 @@ clipboardBtn.addEventListener("click", copy);
 
 
 
-function copyToClipboard() {
-    // BONUS 
-}
+// function copyToClipboard() {
+//     // BONUS 
+// }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 // Calvin note: you dont need (so I commented out) however there was a syntax issue with this function and I resolved
