@@ -16,7 +16,7 @@ This web application is a password generator for a business dealing with sensiti
 
 ## Images
 
-* [Screenshot 1] (../images/Password_Generator_Screenshot)
+* ![Screenshot 1] (hw3/Images/Password_Generator_Screenshot.png)
 
 ## Built With
 
